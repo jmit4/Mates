@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvNum1Suma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ninobackground"
+    tools:context=".ActividadSuma">
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnVolverSuma"
+            android:layout_width="77dp"
+            android:layout_height="74dp"
+            app:srcCompat="@mipmap/volver_foreground" />
+
+        <Space
+            android:layout_width="54dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/sumar_foreground" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow11">
+
+        <TextView
+            android:id="@+id/tvNum1S"
+            android:layout_width="83dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/tvNum2S"
+            android:layout_width="88dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/igual" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="69dp" />
+
+        <EditText
+            android:id="@+id/etRespuestaSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="117dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow8">
+
+        <Space
+            android:layout_width="36dp"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/btnOp1S"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:text="Button" />
+
+        <Space
+            android:layout_width="18dp"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/btnOp2S"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="Button" />
+
+        <Space
+            android:layout_width="18dp"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/btnOp3S"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:text="Button" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9">
+
+        <Space
+            android:layout_width="306dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnNextSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/compartir" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

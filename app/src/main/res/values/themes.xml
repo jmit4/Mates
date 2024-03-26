@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MatemáticasYMásConCalculín" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#04D9B2</item>
+        <item name="colorPrimaryVariant">#D3F064</item>
+        <item name="colorOnPrimary">#F1EEE5</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FB02B1</item>
+        <item name="colorSecondaryVariant">#FA91A0</item>
+        <item name="colorOnSecondary">#F2E2CE</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#115480</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MatemáticasYMásConCalculín" parent="Base.Theme.MatemáticasYMásConCalculín" />
+</resources>

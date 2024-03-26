@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ninobackground"
+    tools:context=".ActividadDivision">
+
+    <ImageView
+        android:id="@+id/btnNext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow17"
+        app:srcCompat="@drawable/compartir" />
+
+    <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnVolver4"
+            android:layout_width="77dp"
+            android:layout_height="74dp"
+            app:srcCompat="@mipmap/volver_foreground" />
+
+        <Space
+            android:layout_width="87dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/division" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow23"
+        android:layout_width="271dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="81dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow22">
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="186dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow23">
+
+        <TextView
+            android:id="@+id/tvNum1D"
+            android:layout_width="81dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/division_1" />
+
+        <TextView
+            android:id="@+id/tvNum2D"
+            android:layout_width="78dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/igual" />
+
+        <Space
+            android:layout_width="22dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/etRespuesta4"
+            android:layout_width="133dp"
+            android:layout_height="54dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow26">
+
+        <Button
+            android:id="@+id/btnOp1D"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="Button" />
+
+        <Space
+            android:layout_width="13dp"
+            android:layout_height="71dp" />
+
+        <Button
+            android:id="@+id/btnOp2D"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:text="Button" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnOp3D"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:text="Button" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

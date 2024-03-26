@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nubes"
+    tools:context=".ActividadLetras">
+
+    <ImageView
+        android:id="@+id/btnNextL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow37"
+        app:srcCompat="@drawable/compartir" />
+
+    <ImageView
+        android:id="@+id/imagenJuego"
+        android:layout_width="273dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow37"
+        app:srcCompat="@drawable/casa" />
+
+    <TableRow
+        android:id="@+id/tableRow37"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="510dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="49dp"
+            android:layout_height="match_parent" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Escribe qué ves"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tvRespuesta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenJuego" />
+
+    <TextView
+        android:id="@+id/tvRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Casa"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:text="Listo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRespuesta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

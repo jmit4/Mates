@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/user_foreground" />
+
+        <TextView
+            android:id="@+id/tvGrado"
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/comic_neue_bold"
+            android:gravity="center"
+            android:text="1°"
+            android:textColor="#FF008C"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/configuracion_foreground" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <Space
+            android:layout_width="29dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnSuma"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/suma_foreground" />
+
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnResta"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/resta_foreground" />
+
+        <Space
+            android:layout_width="37dp"
+            android:layout_height="match_parent" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow5"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow4"
+        app:layout_constraintStart_toEndOf="@+id/tableRow4"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <Space
+            android:layout_width="36dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnMultiplicacion"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/multiplicacion_foreground" />
+
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnDivision"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/division_foreground" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow6"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow5">
+
+        <Space
+            android:layout_width="34dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnDuelo"
+            android:layout_width="133dp"
+            android:layout_height="138dp"
+            app:srcCompat="@mipmap/vs_foreground" />
+
+        <Space
+            android:layout_width="29dp"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableRow4"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnLetras"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/letra_foreground" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow4"
+        app:layout_constraintStart_toEndOf="@+id/tableRow4"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/volver_foreground" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>
