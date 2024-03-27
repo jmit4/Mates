@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Random;
 
 import kotlin.collections.ArrayDeque;
-
+//Hare un comentario de prueba
 public class ActividadLetras extends AppCompatActivity{
 
     HashMap<Integer,String> mapa=new HashMap<Integer,String>();
